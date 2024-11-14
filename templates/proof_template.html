@@ -1,0 +1,29 @@
+<!-- templates/proof_template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Competition Proof</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { text-align: center; }
+        .content { margin: 20px; }
+        .footer { position: fixed; bottom: 0; text-align: center; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>竞赛流程证明</h1>
+    </div>
+    <div class="content">
+        <p><strong>学生姓名：</strong> {{ registration.student.username }}</p>
+        <p><strong>竞赛名称：</strong> {{ registration.competition.title }}</p>
+        <p><strong>竞赛日期：</strong> {{ registration.competition.date }}</p>
+        <p><strong>状态：</strong> {{ registration.status }}</p>
+        <!-- 添加更多信息 -->
+    </div>
+    <div class="footer">
+        <p>版权所有 © 2024</p>
+    </div>
+</body>
+</html>
